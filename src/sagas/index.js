@@ -15,6 +15,9 @@ import {
 import {
   logoutUser
 } from './logout';
+import {
+  sendMessage
+} from './messages';
 
 export default function* root() {
   yield takeEvery(types.LOGIN_USER, loginUser);
@@ -22,4 +25,5 @@ export default function* root() {
   yield takeEvery(types.SIGN_UP_USER, signUp);
   yield takeEvery(types.UPDATE_USER, updateUser);
   yield takeEvery(types.INITIALIZE_WEB3, initializeWeb3);
+  yield takeEvery(types.SEND_MESSAGE, sendMessage);
 }

@@ -8,7 +8,11 @@
   },
   "globals": {
     "expect": true,
-    "__DEV__": true
+    "__DEV__": true,
+    "assert": true,
+    "artifacts": true,
+    "contract": true,
+    "web3": true
   },
   "rules": {
     "no-var": 2,                     // http://eslint.org/docs/rules/no-var

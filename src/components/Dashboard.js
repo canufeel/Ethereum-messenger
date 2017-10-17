@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import MessageFormContainer from '../containers/MessageFormContainer';
 
 const Dashboard = ({ authData }) => (
   <main
@@ -12,7 +13,8 @@ const Dashboard = ({ authData }) => (
         className={ 'pure-u-1-1' }
       >
         <h1>Dashboard</h1>
-        <p><strong>Congratulations {authData.name}!</strong> If you're seeing this page, you've logged in with your own smart contract successfully.</p>
+        <p><strong>Hello {authData.name}!</strong></p>
+        <MessageFormContainer />
       </div>
     </div>
   </main>

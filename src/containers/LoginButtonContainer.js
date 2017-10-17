@@ -8,9 +8,10 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  onLoginUserClick: web3 => () => dispatch(
+  onLoginUserClick: web3 => (address) => dispatch(
     loginActions.loginUser({
-      web3
+      web3,
+      address
     })
   )
 });

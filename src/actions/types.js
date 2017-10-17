@@ -6,6 +6,7 @@ export const USER_UPDATED = 'USER_UPDATED';
 export const LOGOUT_USER = 'LOGOUT_USER';
 export const USER_LOGGED_OUT = 'USER_LOGGED_OUT';
 export const UPDATE_USER = 'UPDATE_USER';
+export const SEND_MESSAGE = 'SEND_MESSAGE';
 
 export const WEB3_INITIALIZED = 'WEB3_INITIALIZED';
 export const INITIALIZE_WEB3 = 'INITIALIZE_WEB3';

@@ -5,7 +5,7 @@ import { UserIsAuthenticated, UserIsNotAuthenticated } from '../util/wrappers.js
 
 // Layouts
 import App from '../App';
-import Home from '../components/Home';
+import HomeContainer from '../containers/HomeContainer';
 import Dashboard from '../components/Dashboard';
 import SignUp from '../components/SignUp';
 import Profile from '../components/Profile';
@@ -29,7 +29,7 @@ export const generateRootComponent = (_store, _history) => {
         <App>
           <Route
             path={ INDEX_PATH }
-            component={ Home }
+            component={ HomeContainer }
             exact
           />
           <Route
